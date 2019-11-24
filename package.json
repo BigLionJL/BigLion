@@ -6,8 +6,9 @@
   "scripts": {
     "start": "node index.js"
   },
-  "author": "",
   "dependencies": {
-    "discord.js": "^11.5.1"
+    "discord.js": "11.1.0",
+    "request": "2.81.0"
+    
   }
 }
