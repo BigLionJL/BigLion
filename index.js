@@ -6,7 +6,7 @@ client.once('ready', () => {
 	console.log('Ready!');
 });
 
-client.login(token);
+client.login(process.env.NjQ4MjUyMDQzNjU5NzA2Mzk3.XdriEg.sdaesNW-a2V4Nw70G8jGrQeQ8us);
 
 client.on('message', message => { 
     if (message.content.startsWith(`${prefix}biglion`)) {
