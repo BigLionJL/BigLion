@@ -1,5 +1,4 @@
 const Discord = require('discord.js');
-const {prefix, token}=require('./config.json');
 const client = new Discord.Client();
 
 client.once('ready', () => {
@@ -9,7 +8,7 @@ client.once('ready', () => {
 client.login(process.env.BOT_TOKEN);
 
 client.on('message', message => { 
-    if (message.content.startsWith(`${prefix}biglion`)) {
+    if (message.content === '!biglion') {
     var fact;
 	fact = Math.ceil(Math.random()*2)
 	if (fact == 1) {
@@ -20,7 +19,7 @@ client.on('message', message => {
         message.channel.send('**This displeases Big Lion, your fate is no longer in your own hands**');
     }
 }
-    if (message.content.startsWith(`${prefix}jail`)) {
+    if (message.content === '!jail') {
         if(message.member.roles.some(role => role.name === 'Mods')) {
             let role = message.guild.roles.find(r => r.name === "Gay Baby Jail");
         let member = message.mentions.members.first();
