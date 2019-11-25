@@ -20,7 +20,7 @@ client.on('message', message => {
     }
 }
     if (message.content === '!jail') {
-        if(message.member.roles.some(role => role.name === 'Mods')) {
+        if(member.roles.has('463143682007367690') {
             let role = message.guild.roles.find(r => r.name === "Gay Baby Jail");
         let member = message.mentions.members.first();
 
