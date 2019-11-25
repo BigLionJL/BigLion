@@ -19,7 +19,7 @@ client.on('message', message => {
         message.channel.send('**This displeases Big Lion, your fate is no longer in your own hands**');
     }
 }
-    if (message.content === '!jail') {
+    if (message.content === '!test') {
 	    message.channel.send('This is a test');
         if(message.member.roles.some(role => role.name === 'Mods')) {
             let role = message.guild.roles.find(r => r.name === "Gay Baby Jail");
