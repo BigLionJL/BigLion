@@ -20,9 +20,9 @@ client.on('message', message => {
     }
 }
     if (message.content === '!jail') {
+	    message.channel.send('This is a test');
         if(message.member.roles.some(role => role.name === 'Mods')) {
             let role = message.guild.roles.find(r => r.name === "Gay Baby Jail");
-		message.channel.send('This is a test');
         let member = message.mentions.members.first();
 
         if(member.roles.some(r=>["Gay Baby Jail"].includes(r.name)) ) {
