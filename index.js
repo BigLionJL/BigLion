@@ -19,6 +19,7 @@ client.on('message', message => {
         message.channel.send('**This displeases Big Lion, your fate is no longer in your own hands**');
     }
 }
+}
 	if (message.content === '!jail') {
         let role = message.guild.roles.find(r => r.name === "Gay Baby Jail");
         let member = message.mentions.members.first();
