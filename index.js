@@ -27,5 +27,9 @@ client.on('message', message => {
        message.channel.send('https://imgur.com/E4SEluu');
         
     }
+	if (message.content === '!pepeD') {
+       message.channel.send('https://imgur.com/JWE2cNv');
+        
+    }
 }
 )
