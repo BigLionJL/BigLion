@@ -19,8 +19,8 @@ client.on('message', message => {
         message.channel.send('**This displeases Big Lion, your fate is no longer in your own hands**');
     }
 }
-	if (message.content === '!jail') {
-        message.channel.send('Test');
+	if (message.content === '!darklion') {
+       message.channel.send('https://imgur.com/a3mLPJP');
         
     }
 }
