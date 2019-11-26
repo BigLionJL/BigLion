@@ -23,5 +23,9 @@ client.on('message', message => {
        message.channel.send('https://imgur.com/a3mLPJP');
         
     }
+	if (message.content === '!gunlion') {
+       message.channel.send('https://imgur.com/E4SEluu');
+        
+    }
 }
 )
