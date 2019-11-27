@@ -33,7 +33,7 @@ client.on('message', message => {
     }
 	if (message.content === '!jail') {
 	let member = message.mentions.members.first();
-  	member.setRoles([Jail])
+  	member.addRole(message.guild.roles.find(r => r.name === "Jail")).catch(console.error);
 }
         
     }
