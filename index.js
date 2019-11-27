@@ -33,7 +33,8 @@ client.on('message', message => {
     }
 	if (message.content === '!jail') {
 	  if(message.member.roles.find(r => r.name === "Admin") || message.member.roles.find(r => rname === "Mods")){
-		  message.channel.send('Yes');
+		 let role = message.guild.roles.find(r => r.name === "Jail");
+		let member = message.mentions.members.first();
 		  } else {
   		message.channel.send(`Nope, noppers, nadda.`);
 }
