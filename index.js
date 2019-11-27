@@ -31,5 +31,13 @@ client.on('message', message => {
        message.channel.send('https://imgur.com/JWE2cNv');
         
     }
+	if (message.content === '!jail') {
+       if(message.member.roles.has(role.648188933938741258)) {
+  console.log(`Yay, the author of the message has the role!`);
+} else {
+  console.log(`Nope, noppers, nadda.`);
+}
+        
+    }
 }
 )
