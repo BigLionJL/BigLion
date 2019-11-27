@@ -38,5 +38,12 @@ member.addRole(role).catch(console.error);
 			message.channel.send('Suck Eggs Nerd');
 	}
 }
+	if (command === 'darklion') {
+	message.channel.send('https://imgur.com/a3mLPJP');	
+	}
+	if (message.content === 'gunlion') {
+       message.channel.send('https://imgur.com/E4SEluu');
+        
+    }
 }
 )
