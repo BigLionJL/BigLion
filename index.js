@@ -31,11 +31,4 @@ client.on('message', message => {
        message.channel.send('https://imgur.com/JWE2cNv');
         
     }
-	if (message.content === '!jail') {
-       if(message.member.roles.some(r=>["Dev", "Mod", "Server Staff", "Proficient"].includes(r.name)) ) {
-  // has one of the roles
-} else {
-  // has none of the roles
-}
-}
 )
