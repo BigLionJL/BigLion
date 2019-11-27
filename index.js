@@ -27,14 +27,14 @@ client.on('message', message => {
 }
 	if (command === 'jail') {
 		if(message.member.roles.find(r => r.name === "Admin") || message.member.roles.find(r => r.name === "Mods")){
-		  let role = message.guild.roles.find(r => r.name === "Jail");
+		  let role = message.guild.roles.find(r => r.name === "Gay Baby Jail");
 		  let member = message.mentions.members.first();
-			if(member.roles.some(r=>["Jail"].includes(r.name)) ) {
+			if(member.roles.some(r=>["Gay Baby Jail"].includes(r.name)) ) {
   			member.removeRole(role).catch(console.error);
-			message.channel.send('**User has been removed from Jail**');
+			message.channel.send('**User has been removed from Gay Baby Jail**');
 			} else {
 			member.addRole(role).catch(console.error);
-			message.channel.send('**User has been sent to Jail**');
+			message.channel.send('**User has been sent to Gay Baby Jail**');
 			}
 		  } else {
 			message.channel.send('Suck Eggs Nerd, you cant use this command');
