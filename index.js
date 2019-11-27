@@ -33,7 +33,11 @@ client.on('message', message => {
     }
 	if (message.content === '!jail') {
 	  if(message.member.roles.find(r => r.name === "Admin") || message.member.roles.find(r => rname === "Mods")){
-		 message.channel.send('Test');	
+	if(message.member.roles.has(Admin.id)) {
+  console.log(`Yay, the author of the message has the role!`);
+} else {
+  console.log(`Nope, noppers, nadda.`);
+}	
 }
         
  }
