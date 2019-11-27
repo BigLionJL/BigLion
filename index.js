@@ -32,8 +32,7 @@ client.on('message', message => {
         
     }
 	if (message.content === '!jail') {
-	let roleID = "648188933938741258";
-	if(message.member.roles.has(role.roleID)) {
+	if(message.member.roles.has(role.648188933938741258)) {
   message.channel(`Yay, the author of the message has the role!`);
 } else {
   message.channel(`Nope, noppers, nadda.`);
