@@ -31,4 +31,4 @@ client.on('message', message => {
        message.channel.send('https://imgur.com/JWE2cNv');
         
     }
-)
+})
