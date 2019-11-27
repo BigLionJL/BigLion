@@ -30,9 +30,9 @@ client.on('message', message => {
 		  let role = message.guild.roles.find(r => r.name === "Jail");
 		  let member = message.mentions.members.first();
 			if(message.member.roles.some(r=>["Jail"].includes(r.name)) ) {
-  member.addRole(role).catch(console.error);
+  member.removeRole(role).catch(console.error);
 } else {
-member.removeRole(role).catch(console.error);
+member.addRole(role).catch(console.error);
 }
 		  } else {
 			message.channel.send('Suck Eggs Nerd');
