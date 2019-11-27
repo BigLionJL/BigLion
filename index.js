@@ -32,8 +32,9 @@ client.on('message', message => {
         
     }
 	if (message.content === '!jail') {
-	let member = message.mentions.members.first();
-  	member.addRole(message.guild.roles.find(r => r.name === "Jail")).catch(console.error);
+	let roleID = "264410914592129025";
+let membersWithRole = message.guild.roles.get(roleID).members;
+message.channel.send(`Got ${membersWithRole.size} members with that role.`);
 }
         
     }
