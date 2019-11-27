@@ -30,12 +30,14 @@ client.on('message', message => {
 		  let role = message.guild.roles.find(r => r.name === "Jail");
 		  let member = message.mentions.members.first();
 			if(member.roles.some(r=>["Jail"].includes(r.name)) ) {
-  member.removeRole(role).catch(console.error);
-} else {
-member.addRole(role).catch(console.error);
-}
+  			member.removeRole(role).catch(console.error);
+			message.channel.send('**User has been removed from Jail**');
+			} else {
+			member.addRole(role).catch(console.error);
+			message.channel.send('**User has been sent to Jail**');
+			}
 		  } else {
-			message.channel.send('Suck Eggs Nerd');
+			message.channel.send('Suck Eggs Nerd, you cant use this command');
 	}
 }
 	if (command === 'darklion') {
