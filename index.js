@@ -43,7 +43,9 @@ member.addRole(role).catch(console.error);
 	}
 	if (command === 'gunlion') {
        message.channel.send('https://imgur.com/E4SEluu');
-        
+    }
+	if (command === 'pepeshoot') {
+       message.channel.send('https://imgur.com/fAeX3J7');
     }
 }
 )
