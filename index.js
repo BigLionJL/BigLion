@@ -33,11 +33,13 @@ client.on('message', message => {
     }
 	if (message.content === '!jail') {
 	  if(message.member.roles.find(r => r.name === "Admin") || message.member.roles.find(r => r.name === "Mods")){
+		if(message.member.roles.find(r => r.name === "Admin") || message.member.roles.find(r => r.name === "Mods")){
 		  let role = message.guild.roles.find(r => r.name === "Jail");
-		  let member = message.member;
+		  let member = message.mentions.members.first();
 		 member.addRole(role).catch(console.error);
 		  } else {
 			message.channel.send('Test');
+}
 }
 }     
 }
