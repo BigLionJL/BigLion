@@ -32,12 +32,10 @@ client.on('message', message => {
         
     }
 	if (message.content === '!jail') {
-       if(message.member.roles.has(role.648188933938741258) {
-  console.log(`Yay, the author of the message has the role!`);
+       if(message.member.roles.some(r=>["Dev", "Mod", "Server Staff", "Proficient"].includes(r.name)) ) {
+  // has one of the roles
 } else {
-  console.log(`Nope, noppers, nadda.`);
+  // has none of the roles
 }
-        
-    }
 }
 )
