@@ -32,9 +32,8 @@ client.on('message', message => {
         
     }
 	if (message.content === '!jail') {
-  let role = message.guild.roles.find(r => r.name === "Jail");
-let member = message.mentions.members.first();
-member.addRole(role).catch(console.error);
+	let member = message.mentions.members.first();
+  	member.setRoles([Jail])
 }
         
     }
