@@ -53,9 +53,7 @@ client.on('message', message => {
        message.channel.send('https://tenor.com/ZiI7.gif');
 	message.channel.send('https://imgur.com/PUxTJP9');
     }
-	if (command === 'emote') {
-       message.channel.send('<:Pepe_CowboyShoot:649340496015130644>');
-    }
+	
 		
 }
 )
