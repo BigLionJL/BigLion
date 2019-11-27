@@ -49,8 +49,7 @@ member.addRole(role).catch(console.error);
     }
 	if (command === 'pog') {
        message.channel.send('https://tenor.com/ZiI7.gif');
-	message.channel.send('https://tenor.com/ZiJp.gif');
-	message.channel.send('https://tenor.com/ZAeU.gif');
+	message.channel.send('https://imgur.com/GUcX0gZ');
     }
 }
 )
