@@ -47,7 +47,7 @@ member.addRole(role).catch(console.error);
 	if (command === 'pepeshoot') {
        message.channel.send('https://imgur.com/fAeX3J7');
     }
-	if (command === 'Pog') {
+	if (command === 'pog') {
        message.channel.send('https://tenor.com/ZiI7.gif');
 	message.channel.send('https://tenor.com/ZiJp.gif');
 	message.channel.send('https://tenor.com/ZAeU.gif');
