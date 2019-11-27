@@ -54,7 +54,7 @@ client.on('message', message => {
 	message.channel.send('https://imgur.com/PUxTJP9');
     }
 	if (command === 'emote') {
-       message.channel.send('<:monkaOMEGA:647851341481508865>');
+       message.channel.send('<n!:Pepe_CowboyShoot:649340496015130644>');
     }
 		
 }
