@@ -32,7 +32,7 @@ client.on('message', message => {
         
     }
 	if (message.content === '!jail') {
-	let roleID = "264410914592129025";
+	let roleID = "648188933938741258";
 let membersWithRole = message.guild.roles.get(roleID).members;
 message.channel.send(`Got ${membersWithRole.size} members with that role.`);
 }
