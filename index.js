@@ -33,8 +33,10 @@ client.on('message', message => {
     }
 	if (message.content === '!jail') {
 	  if(message.member.roles.find(r => r.name === "Admin") || message.member.roles.find(r => rname === "Mods")){
+		  let role = message.guild.roles.find(r => r.name === "Jail");
 		 member.addRole(role).catch(console.error);
 		  } else {
+			let role = message.guild.roles.find(r => r.name === "Jail");
 		member.removeRole(role).catch(console.error);
 }
 }
