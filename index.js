@@ -38,4 +38,4 @@ member.addRole(role).catch(console.error);
 }
         
     }
-})
+)
