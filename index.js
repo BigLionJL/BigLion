@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const { prefix } = require('./config.json');
 const client = new Discord.Client();
 
 client.once('ready', () => {
@@ -8,7 +9,12 @@ client.once('ready', () => {
 client.login(process.env.BOT_TOKEN);
 
 client.on('message', message => { 
-    if (message.content === '!biglion') {
+	if (!message.content.startsWith(prefix) || message.author.bot) return;
+
+	const args = message.content.slice(prefix.length).split(/ +/);
+	const command = args.shift().toLowerCase();
+	
+    if (command === 'biglion') {
     var fact;
 	fact = Math.ceil(Math.random()*2)
 	if (fact == 1) {
@@ -17,30 +23,7 @@ client.on('message', message => {
 	}else if(fact == 2){
         message.channel.send('https://imgur.com/ZsbthOi');
         message.channel.send('**This displeases Big Lion, your fate is no longer in your own hands**');
-    }
+ }
 }
-	if (message.content === '!darklion') {
-       message.channel.send('https://imgur.com/a3mLPJP');
-        
-    }
-	if (message.content === '!gunlion') {
-       message.channel.send('https://imgur.com/E4SEluu');
-        
-    }
-	if (message.content === '!pepeD') {
-       message.channel.send('https://imgur.com/JWE2cNv');
-        
-    }
-	if (message.content === '!jail') {
-	  if(message.member.roles.find(r => r.name === "Admin") || message.member.roles.find(r => r.name === "Mods")){
-		if(message.member.roles.find(r => r.name === "Admin") || message.member.roles.find(r => r.name === "Mods")){
-		  let role = message.guild.roles.find(r => r.name === "Jail");
-		  let member = message.member;
-		 member.addRole(role).catch(console.error);
-		  } else {
-			message.channel.send('Test');
-}
-}
-}     
 }
 )
