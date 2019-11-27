@@ -25,5 +25,13 @@ client.on('message', message => {
         message.channel.send('**This displeases Big Lion, your fate is no longer in your own hands**');
  }
 }
+	if (command === 'jail') {
+		if(message.member.roles.find(r => r.name === "Admin") || message.member.roles.find(r => r.name === "Mods")){
+		  let role = message.guild.roles.find(r => r.name === "Jail");
+		  let member = message.mentions.members.first();
+		 member.addRole(role).catch(console.error);
+		  } else {
+			message.channel.send('Suck Eggs Nerd');
+	}
 }
 )
