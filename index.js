@@ -41,7 +41,7 @@ member.addRole(role).catch(console.error);
 	if (command === 'darklion') {
 	message.channel.send('https://imgur.com/a3mLPJP');	
 	}
-	if (message.content === 'gunlion') {
+	if (command === 'gunlion') {
        message.channel.send('https://imgur.com/E4SEluu');
         
     }
