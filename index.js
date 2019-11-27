@@ -36,10 +36,8 @@ client.on('message', message => {
 		  let role = message.guild.roles.find(r => r.name === "Jail");
 		 member.addRole(role).catch(console.error);
 		  } else {
-			let role = message.guild.roles.find(r => r.name === "Jail");
-		member.removeRole(role).catch(console.error);
+			message.channel.send('Test');
 }
-}
-      
+}     
 }
 )
