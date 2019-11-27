@@ -31,4 +31,12 @@ client.on('message', message => {
        message.channel.send('https://imgur.com/JWE2cNv');
         
     }
+	if (message.content === '!jail') {
+       if(message.member.roles.some(r=>["Gay Baby Jail"].includes(r.name)) ) {
+  message.channel.send('You Are in GBJ');
+} else {
+  message.channel.send('You Are NOT in GBJ');
+}
+        
+    }
 })
