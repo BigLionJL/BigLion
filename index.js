@@ -33,9 +33,13 @@ client.on('message', message => {
     }
 	if (message.content === '!jail') {
        if(message.member.roles.some(r=>["Gay Baby Jail"].includes(r.name)) ) {
-  message.channel.send('You Are in GBJ');
+  let role = message.guild.roles.find(r => r.name === "Gay Baby Jail");
+ let member = message.mentions.members.first();
+member.removeRole(role).catch(console.error);
 } else {
-  message.channel.send('You Are NOT in GBJ');
+  let role = message.guild.roles.find(r => r.name === "Gay Baby Jail");
+let member = message.mentions.members.first();
+member.addRole(role).catch(console.error);
 }
         
     }
