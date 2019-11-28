@@ -53,10 +53,7 @@ client.on('message', message => {
        message.channel.send('https://tenor.com/ZiI7.gif');
 	message.channel.send('https://imgur.com/PUxTJP9');
     }
-	if(message.content === "ayy") {
-   message.channel.send('LMAO');
-}
-	
+		
 		
 }
 )
