@@ -54,7 +54,7 @@ client.on('message', message => {
 	message.channel.send('https://imgur.com/PUxTJP9');
     }
 	if(message.content === "ayy") {
-   message.reply('LMAO');
+   message.channel.send('LMAO');
 }
 	
 		
