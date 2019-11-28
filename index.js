@@ -4,13 +4,6 @@ const client = new Discord.Client();
 
 client.once('ready', () => {
 	console.log('Ready!');
-	let static = [], animated = [];
-    client.guilds.get('guild_id').emojis.forEach(emoji => emoji.animated ? animated.push([emoji.id, emoji.name]) : static.push([emoji.id, emoji.name]));
-
-    console.log('Static Emojis\n');
-    static.forEach(emoji => console.log('<:' + emoji[1] + ':' + emoji[0] + '>'));
-    console.log('\nAnimated Emojis\n');
-    animated.forEach(emoji => console.log('<a:' + emoji[1] + ':' + emoji[0] + '>'));
 });
 
 client.login(process.env.BOT_TOKEN);
