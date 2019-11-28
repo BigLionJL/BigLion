@@ -54,8 +54,8 @@ client.on('message', message => {
 	message.channel.send('https://imgur.com/PUxTJP9');
     }
 	if (command === 'pepeCowboy') {
-    	const pepeshoot = client.emojis.find(emoji => emoji.name === "pepeShoot");
-	message.channel.send(pepeshoot);
+    	const pepeshoot = guild.emojis.find(emoji => emoji.name === "pepeShoot");
+	message.channel.send(`${pepeshoot}`);
     }
 	
 		
