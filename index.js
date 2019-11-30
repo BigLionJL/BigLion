@@ -52,6 +52,9 @@ client.on('message', message => {
 	if (command === 'pog') {
        message.channel.send('https://tenor.com/ZiI7.gif');
 	message.channel.send('https://imgur.com/PUxTJP9');
-    }		
+    }
+	if (command === 'rawr') {
+       message.channel.send('https://imgur.com/fsLiOOr');
+    }
 }
 )
