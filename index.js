@@ -40,11 +40,7 @@ client.on('message', message => {
 			message.channel.send('Suck Eggs Nerd, you cant use this command');
 	}
 }
-	 if(command === "ping") {
 
-    const m = await message.channel.send("Ping?");
-    m.edit(`Pong! Latency is ${m.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms`);
-  }
 	if (command === 'darklion') {
 	message.channel.send('https://imgur.com/a3mLPJP');	
 	}
