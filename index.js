@@ -42,7 +42,7 @@ client.on('message', message => {
 }
 	if (command === 'shush') {
 		  let member = message.mentions.members.first();
-		message.channel.send(member);
+		message.channel.send('Test');
 		
 }
 	if (command === 'darklion') {
