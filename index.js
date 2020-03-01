@@ -54,6 +54,14 @@ client.on('message', message => {
        message.channel.send('https://tenor.com/ZiI7.gif');
 	message.channel.send('https://imgur.com/PUxTJP9');
     }
+	if (command === 'command') {
+       message.channel.send('!jail will add/remove the @ed user in Gay Baby Jail');
+	message.channel.send('!biglion will decide your fate in a true 50/50');
+		message.channel.send('!darklion is a spooky fellow, be advised');
+		message.channel.send('!gunlion is a straight up G');
+			message.channel.send('!pepeshoot is a master of the shoot');
+			message.channel.send('!pog... ANY POGGERS IN THE CHAT?');
+    }
 
 }
 )
