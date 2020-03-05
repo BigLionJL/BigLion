@@ -40,7 +40,12 @@ client.on('message', message => {
 			message.channel.send('Suck Eggs Nerd, you cant use this command');
 	}
 }
-
+if (command === 'test') {
+		  let member = message.mentions.members.first();
+		let memberString = member.toString();
+	message.channel.send(member);
+			
+}
 	if (command === 'darklion') {
 	message.channel.send('https://imgur.com/a3mLPJP');	
 	}
