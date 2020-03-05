@@ -40,12 +40,12 @@ client.on('message', message => {
 			message.channel.send('Suck Eggs Nerd, you cant use this command');
 	}
 }
-if (command === 'test') {
+if (command === 'simp') {
 		  let member = message.mentions.members.first();
 		let memberString = member.toString();
 	message.channel.send("Listen uhh");
 	message.channel.send(memberString);
-	message.channel.send("but there's no easy way to say this but uhh...\n Look... \n you're a simp. \n I'm gonna have to remport you back to Kuzco.");
+	message.channel.send("but there's no easy way to say this but uhh...\n Look... \n You're a simp. \n I'm gonna have to remport you back to Kuzco.");
 	
 			
 }
@@ -74,6 +74,7 @@ if (command === 'test') {
 	message.channel.send('**!gunlion** is a straight up G');
 	message.channel.send('**!pepeshoot** is a master of the shoot');
 	message.channel.send('**!damn**... wins any argument');
+	message.channel.send('**!simp**... Kuzco will not be happy');
 	message.channel.send('**!pog**... ANY POGGERS IN THE CHAT?');
     }
 
