@@ -43,7 +43,10 @@ client.on('message', message => {
 if (command === 'test') {
 		  let member = message.mentions.members.first();
 		let memberString = member.toString();
+	message.channel.send("Listen uhh");
 	message.channel.send(memberString);
+	message.channel.send("but there's no easy way to say this but uhh...\n Look... \n you're a simp. \n I'm gonna have to remport you back to Kuzco.");
+	
 			
 }
 	if (command === 'darklion') {
