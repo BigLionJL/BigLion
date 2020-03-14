@@ -8,7 +8,7 @@ client.once('ready', () => {
 
 client.login(process.env.BOT_TOKEN);
 
-client.on('message', message => { 
+client.on('message', async message => { 
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 	const queue = new Map();
 	const args = message.content.slice(prefix.length).split(/ +/);
