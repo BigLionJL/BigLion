@@ -77,7 +77,7 @@ if (command === 'simp') {
 
 	const serverQueue = queue.get(message.guild.id);
 
-	if (message.content.startsWith(`${prefix}play`)) {
+	if (command === 'play') {
 		execute(message, serverQueue);
 		return;
 	} else if (message.content.startsWith(`${prefix}skip`)) {
