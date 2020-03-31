@@ -10,14 +10,14 @@ client.login(process.env.BOT_TOKEN);
 client.on('message', message => {
 
 
-	if (!message.content.startsWith(prefix) || message.author.bot) return;
-if(message.content.includes('millions')||message.content.includes('MILLIONS')||message.content.includes('Millions')) {
-message.channel.send('AND MILLIONS');
-}	
-
+	if (message.author.bot) return;
 	const queue = new Map();
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
+	
+	if(message.content.includes('millions')||message.content.includes('MILLIONS')||message.content.includes('Millions')) {
+		message.channel.send('AND MILLIONS');
+}
 	
     if (command === 'biglion') {
     var fact;
