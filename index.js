@@ -8,12 +8,14 @@ client.once('ready', () => {
 
 client.login(process.env.BOT_TOKEN);
 
+
+
+	if (!message.content.startsWith(prefix) || message.author.bot) return;
 client.on('message', message => {
-	
 if(message.content.includes('millions')||message.content.includes('MILLIONS')||message.content.includes('Millions')) {
 message.reply('AND MILLIONS');
-}
-	if (!message.content.startsWith(prefix) || message.author.bot) return;
+}	
+
 	const queue = new Map();
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
