@@ -13,7 +13,7 @@ client.login(process.env.BOT_TOKEN);
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 client.on('message', message => {
 if(message.content.includes('millions')||message.content.includes('MILLIONS')||message.content.includes('Millions')) {
-message.reply('AND MILLIONS');
+message.channel.send('AND MILLIONS');
 }	
 
 	const queue = new Map();
