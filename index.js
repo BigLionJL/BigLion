@@ -8,9 +8,10 @@ client.once('ready', () => {
 
 client.login(process.env.BOT_TOKEN);
 
-client.on('message', message => { 
-		  if(message.content.includes('millions')) {
-    message.channel.send('AND MILLIONS');
+client.on('message', message => {
+	
+if(message.content.includes('millions')) {
+message.channel.send('AND MILLIONS');
 }
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 	const queue = new Map();
