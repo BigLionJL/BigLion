@@ -7,11 +7,10 @@ client.once('ready', () => {
 });
 
 client.login(process.env.BOT_TOKEN);
-
+client.on('message', message => {
 
 
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
-client.on('message', message => {
 if(message.content.includes('millions')||message.content.includes('MILLIONS')||message.content.includes('Millions')) {
 message.channel.send('AND MILLIONS');
 }	
