@@ -58,9 +58,9 @@ if (command === 'simp') {
 	if (command === 'ping') {
 		  let member = message.mentions.members.first();
 		let memberString = member.toString();
-	message.channel.send('Knuckles: Cracked\n Headset: On\n Horrendous war atrocities which violently defile the Geneva convention, for which I will surely be executed for my crimes: Commited\n Yep, it’s gaming time.\n So uh...');	
+	message.channel.send(' Knuckles: **Cracked**\n Headset: **On**\n Horrendous war atrocities which violently defile the Geneva convention, for which I will surely be executed for my crimes: **Commited**\n Yep, it’s gaming time.\n So uh...');	
 	message.channel.send(memberString);
-	message.channel.send('GET ON');	
+	message.channel.send('**GET ON**');	
 	
 			
 }
@@ -83,7 +83,7 @@ if (command === 'simp') {
     }
 	
 	if (command === 'commands') {
-        message.channel.send('**!jail and an @ed User** will add/remove the @ed user in Gay Baby Jail\n **!biglion** will decide your fate in a true 50/50\n **!darklion** is a spooky fellow, be advised \n **!gunlion** is a straight up G\n **!PepegaGun** is a master of the shoot\n **!damn**... wins any argument\n **!simp and an @ed User**... Kuzco will not be happy\n **!pog**... ANY POGGERS IN THE CHAT?');
+        message.channel.send('**!jail and an @ed User** will add/remove the @ed user in Gay Baby Jail\n **!biglion** will decide your fate in a true 50/50\n **!darklion** is a spooky fellow, be advised \n **!gunlion** is a straight up G\n **!PepegaGun** is a master of the shoot\n **!damn**... wins any argument\n **!simp and an @ed User**... Kuzco will not be happy\n **!pog**... ANY POGGERS IN THE CHAT?\n **!ping** and an @ed User**... For when you want someone to get on');
     }
 	
 
