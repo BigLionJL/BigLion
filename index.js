@@ -54,6 +54,19 @@ if (command === 'simp') {
 	
 			
 }
+	
+	if (command === 'ping') {
+		  let member = message.mentions.members.first();
+		let memberString = member.toString();
+	message.channel.send(memberString);
+	message.channel.send(memberString);
+	message.channel.send(memberString);
+	message.channel.send(memberString);
+	message.channel.send('GET THE FUCK ON');	
+		
+	
+			
+}
 	if (command === 'darklion') {
 	message.channel.send('https://imgur.com/a3mLPJP');	
 	}
