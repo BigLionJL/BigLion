@@ -58,12 +58,9 @@ if (command === 'simp') {
 	if (command === 'ping') {
 		  let member = message.mentions.members.first();
 		let memberString = member.toString();
+	message.channel.send('Knuckles: Cracked\n Headset: On\n Horrendous war atrocities which violently defile the Geneva convention, for which I will surely be executed for my crimes: Commited\n Yep, it’s gaming time.\n So uh...');	
 	message.channel.send(memberString);
-	message.channel.send(memberString);
-	message.channel.send(memberString);
-	message.channel.send(memberString);
-	message.channel.send('GET THE FUCK ON');	
-		
+	message.channel.send('GET ON');	
 	
 			
 }
