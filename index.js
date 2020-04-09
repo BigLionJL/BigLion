@@ -87,7 +87,7 @@ if (command === 'simp') {
     }
 	
 	if (command === 'commands') {
-        message.channel.send('**!jail and an @ed User** will add/remove the @ed user in Gay Baby Jail\n **!biglion** will decide your fate in a true 50/50\n **!darklion** is a spooky fellow, be advised \n **!gunlion** is a straight up G\n **!PepegaGun** is a master of the shoot\n **!damn**... wins any argument\n **!simp and an @ed User**... Kuzco will not be happy\n **!pog**... ANY POGGERS IN THE CHAT?\n **!ping** and an @ed User**... For when you want someone to get on\n **!turnips**... TURNIPS!?!?!');
+        message.channel.send('**!jail and an @ed User** will add/remove the @ed user in Gay Baby Jail\n **!biglion** will decide your fate in a true 50/50\n **!darklion** is a spooky fellow, be advised \n **!gunlion** is a straight up G\n **!PepegaGun** is a master of the shoot\n **!damn**... wins any argument\n **!simp and an @ed User**... Kuzco will not be happy\n **!pog**... ANY POGGERS IN THE CHAT?\n **!ping and an @ed User**... For when you want someone to get on\n **!turnips**... TURNIPS!?!?!');
     }
 	
 
