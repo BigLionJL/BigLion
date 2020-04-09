@@ -82,7 +82,7 @@ if (command === 'simp') {
 	message.channel.send('**You kinda got to shut up now**');
     }
 	if (command === 'turnips') {
-        message.channel.send('https://imgur.com/5jxGeDh');
+        message.channel.send('https://imgur.com/KD4Txnq');
 	message.channel.send('**PLEASE TELL ME YOUR TURNIP PRICES**');
     }
 	
